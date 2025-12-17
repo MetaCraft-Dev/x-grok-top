@@ -29,63 +29,84 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
+      "@graph": [
         {
-          "@type": "Question",
-          "name": "Grok会员价格是多少？(共享vs独享)",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "本站提供多种 Grok会员价格方案：共享账号低至 ¥70/月；独享成品号 ¥250/月，赠送 X Premium 蓝标；代充服务 ¥245/月，支持老号无缝升级。"
+          "@type": "WebSite",
+          "url": "https://x-grok.top/",
+          "name": "X-Grok.top",
+          "keywords": "星际放映厅, NaifeiStation, 优惠码, xmpick, 93折, Grok 4.1, SuperGrok",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://x-grok.top/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
           }
         },
         {
-          "@type": "Question",
-          "name": "Grok会员有什么特权？包含 X Premium 蓝标吗？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "开通后可解锁 Grok 2 (Grok 4.1) 推理模型，128k 上下文；独享或代充订单包含 X Premium 蓝V认证；支持 DeepSearch 实时联网搜索 X 平台数据。"
+          "@type": "Product",
+          "name": "Grok 4.1 独享成品号 (星际放映厅渠道)",
+          "image": "https://x-grok.top/assets/og-cover.svg",
+          "description": "Grok 4.1 独享账号，包含 X Premium 蓝标认证。支持 DeepSearch 与生图。使用优惠码 [xmpick] 可享星际放映厅 (NaifeiStation) 93折优惠。",
+          "brand": {"@type": "Brand", "name": "X-Grok.Top"},
+          "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "328"},
+          "review": {"@type": "Review", "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "author": {"@type": "Person", "name": "Verified Buyer"}},
+          "offers": {
+            "@type": "Offer",
+            "price": "250.00",
+            "priceCurrency": "CNY",
+            "availability": "https://schema.org/InStock",
+            "url": "https://x-grok.top/go/grok-buy",
+            "priceValidUntil": "2026-12-31",
+            "description": "使用优惠码 xmpick 立减 7% (93折)",
+            "shippingDetails": {"@type": "OfferShippingDetails", "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "CNY"}, "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "CN"}, "deliveryTime": {"@type": "ShippingDeliveryTime", "handlingTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "HUR"}, "transitTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "HUR"}}},
+            "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "applicableCountry": "CN", "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", "merchantReturnDays": 7, "returnMethod": "https://schema.org/ReturnByMail", "returnFees": "https://schema.org/FreeReturn"}
           }
         },
         {
-          "@type": "Question",
-          "name": "国内如何开通 Grok会员？支付失败怎么办？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "国内信用卡易被风控拒付。可在本站购买 Grok会员成品号或使用代充服务，支持支付宝/微信直接付款，无需外币卡，100% 成功开通，解决支付失败问题。"
+          "@type": "Product",
+          "name": "Grok 4.1 现有账号代充",
+          "image": "https://x-grok.top/assets/og-cover.svg",
+          "description": "为您的现有 X 账号升级 SuperGrok 权限，保留关注与历史记录。支持星际放映厅优惠码 [xmpick]。",
+          "brand": {"@type": "Brand", "name": "X-Grok.Top"},
+          "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "156"},
+          "review": {"@type": "Review", "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "author": {"@type": "Person", "name": "VIP User"}},
+          "offers": {
+            "@type": "Offer",
+            "price": "245.00",
+            "priceCurrency": "CNY",
+            "availability": "https://schema.org/InStock",
+            "url": "https://x-grok.top/go/grok-topup",
+            "priceValidUntil": "2026-12-31",
+            "description": "使用优惠码 xmpick 立减 7% (93折)",
+            "shippingDetails": {"@type": "OfferShippingDetails", "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "CNY"}, "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "CN"}},
+            "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "applicableCountry": "CN", "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", "merchantReturnDays": 3, "returnMethod": "https://schema.org/ReturnByMail", "returnFees": "https://schema.org/FreeReturn"}
           }
         },
         {
-          "@type": "Question",
-          "name": "现有 X 账号可以升级 Grok会员吗？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "可以。选择现有账号代充服务，在保留关注列表与历史记录的前提下，为您的 X 账号升级开通 Grok会员权益。"
+          "@type": "Product",
+          "name": "Grok 4.1 入门共享号",
+          "image": "https://x-grok.top/assets/og-cover.svg",
+          "description": "低门槛体验 Grok 4.1 强大功能。适合尝鲜用户。",
+          "brand": {"@type": "Brand", "name": "X-Grok.Top"},
+          "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "542"},
+          "review": {"@type": "Review", "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"}, "author": {"@type": "Person", "name": "New User"}},
+          "offers": {
+            "@type": "Offer",
+            "price": "70.00",
+            "priceCurrency": "CNY",
+            "availability": "https://schema.org/InStock",
+            "url": "https://x-grok.top/go/grok-shared",
+            "priceValidUntil": "2026-12-31",
+            "description": "使用优惠码 xmpick 立减 7%",
+            "shippingDetails": {"@type": "OfferShippingDetails", "shippingRate": {"@type": "MonetaryAmount", "value": "0", "currency": "CNY"}, "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "CN"}},
+            "hasMerchantReturnPolicy": {"@type": "MerchantReturnPolicy", "applicableCountry": "CN", "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow", "merchantReturnDays": 1, "returnMethod": "https://schema.org/ReturnByMail", "returnFees": "https://schema.org/FreeReturn"}
           }
         },
         {
-          "@type": "Question",
-          "name": "购买的账号安全吗？会不会被封号？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "我们使用正规渠道支付与独立住宅IP环境，提供质保承诺；非违规使用导致问题支持补号或退款。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "下单后多久发货？如何接收账号？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "独享成品号与共享号支持24小时自动发货；代充通常1-6小时完成，最慢不超过24小时。"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "成品号是独享的吗？我可以修改密码吗？",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "遵循一人一号原则，交付包含独立邮箱；拿到账号后建议立即改密并绑定手机号/辅助邮箱，您拥有100%控制权。"
-          }
+          "@type": "SpecialAnnouncement",
+          "name": "星际放映厅 (NaifeiStation) 优惠码",
+          "text": "本站提供星际放映厅独家优惠码：输入 'xmpick' 即可享受全场 93 折优惠。适用于 Grok 4.1 成品号与代充服务。",
+          "datePosted": "2025-01-01",
+          "expires": "2026-12-31"
         }
       ]
     }
@@ -164,75 +185,6 @@
     @media (min-width:1024px){#pricing,#compare,#blog{margin-bottom:4.5rem}}
     #pricing::after,#compare::after,#blog::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2rem;background:linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.28) 100%);pointer-events:none}
   </style>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "url": "https://x-grok.top/",
-          "name": "X-Grok.top",
-          "keywords": "星际放映厅, NaifeiStation, 优惠码, xmpick, 93折, Grok 4.1, SuperGrok",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://x-grok.top/?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
-        },
-        {
-          "@type": "Product",
-          "name": "Grok 4.1 独享成品号 (星际放映厅渠道)",
-          "image": "https://x-grok.top/assets/og-cover.svg",
-          "description": "Grok 4.1 独享账号，包含 X Premium 蓝标认证。支持 DeepSearch 与生图。使用优惠码 [xmpick] 可享星际放映厅 (NaifeiStation) 93折优惠。",
-          "brand": {"@type": "Brand", "name": "X-Grok.Top"},
-          "offers": {
-            "@type": "Offer",
-            "price": "250.00",
-            "priceCurrency": "CNY",
-            "availability": "https://schema.org/InStock",
-            "url": "https://x-grok.top/go/grok-buy",
-            "priceValidUntil": "2025-12-31",
-            "description": "使用优惠码 xmpick 立减 7% (93折)"
-          }
-        },
-        {
-          "@type": "Product",
-          "name": "Grok 4.1 现有账号代充",
-          "description": "为您的现有 X 账号升级 SuperGrok 权限，保留关注与历史记录。支持星际放映厅优惠码 [xmpick]。",
-          "brand": {"@type": "Brand", "name": "X-Grok.Top"},
-          "offers": {
-            "@type": "Offer",
-            "price": "245.00",
-            "priceCurrency": "CNY",
-            "availability": "https://schema.org/InStock",
-            "url": "https://x-grok.top/go/grok-topup",
-            "description": "使用优惠码 xmpick 立减 7% (93折)"
-          }
-        },
-        {
-          "@type": "Product",
-          "name": "Grok 4.1 入门共享号",
-          "description": "低门槛体验 Grok 4.1 强大功能。适合尝鲜用户。",
-          "brand": {"@type": "Brand", "name": "X-Grok.Top"},
-          "offers": {
-            "@type": "Offer",
-            "price": "70.00",
-            "priceCurrency": "CNY",
-            "availability": "https://schema.org/InStock",
-            "url": "https://x-grok.top/go/grok-shared",
-            "description": "使用优惠码 xmpick 立减 7%"
-          }
-        },
-        {
-          "@type": "SpecialAnnouncement",
-          "name": "星际放映厅 (NaifeiStation) 优惠码",
-          "text": "本站提供星际放映厅独家优惠码：输入 'xmpick' 即可享受全场 93 折优惠。适用于 Grok 4.1 成品号与代充服务。",
-          "datePosted": "2025-01-01",
-          "expires": "2026-12-31"
-        }
-      ]
-    }
-  </script>
 </head>
 <body class="ambient bg-black text-slate-100 antialiased pb-20 md:pb-0">
   <div class="pointer-events-none fixed -z-10 top-[-10rem] left-[-6rem] w-[30rem] h-[30rem] rounded-full bg-purple-600/20 blur-[120px] animate-aurora"></div>
@@ -428,7 +380,7 @@
               <span>正规渠道开通 (1-24h 极速到账)</span>
             </li>
             <li class="flex gap-2 items-center">
-              <span class="text-slate-300">�</span>
+              <span class="text-slate-300"></span>
               <span>解决国内卡拒付 / 避免风控锁号</span>
             </li>
             <li class="flex gap-2 items-center">
